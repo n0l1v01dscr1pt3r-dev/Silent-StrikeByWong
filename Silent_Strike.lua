@@ -5,11 +5,11 @@
 local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
 
 local Window = Rayfield:CreateWindow({
-	Name = "Silent Strike",
-	LoadingTitle = "Silent Strike",
+	Name = "VoidStrike",
+	LoadingTitle = "VoidStrike",
 	LoadingSubtitle = "<>",
 	Theme = "Dark",
-	ConfigurationSaving = { Enabled = false }
+	ConfigurationSaving = { Enabled = true }
 })
 
 -- Services
@@ -202,7 +202,7 @@ local Visuals = Window:CreateTab("Visuals", 4483362458)
 local UI = Window:CreateTab("UI", 4483362458)
 
 Main:CreateToggle({
-	Name = "Enable Silent Strike",
+	Name = "Lock On",
 	CurrentValue = false,
 	Flag = "SilentStrikeToggle",
 	Callback = function(v) Enabled = v end
@@ -224,7 +224,7 @@ Combat:CreateDropdown({
 })
 
 Combat:CreateInput({
-	Name = "Velocity Desync Strength",
+	Name = "Reach Strength",
 	PlaceholderText = "0.5 - 2 recommended",
 	RemoveTextAfterFocusLost = false,
 	Callback = function(txt)
@@ -234,7 +234,7 @@ Combat:CreateInput({
 })
 
 Combat:CreateInput({
-	Name = "Side Offset (studs)",
+	Name = "(studs)",
 	PlaceholderText = "Default 2.5",
 	RemoveTextAfterFocusLost = false,
 	Callback = function(txt)
