@@ -7,9 +7,9 @@
 local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
 
 local Window = Rayfield:CreateWindow({
-	Name = "Silent Strike",
-	LoadingTitle = "Silent Strike",
-	LoadingSubtitle = "<>",
+	Name = "VoidStrike",
+	LoadingTitle = "VoidStrike⭐",
+	LoadingSubtitle = "<🌕>",
 	Theme = "Dark",
 	ConfigurationSaving = { Enabled = false }
 })
